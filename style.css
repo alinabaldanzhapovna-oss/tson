@@ -1275,3 +1275,194 @@ font-size:15px;
 }
 
 }
+
+/* =========================================
+   TSON MOBILE LUXURY VERSION
+========================================= */
+
+@media (max-width:768px){
+
+header{
+    height:70px;
+    padding:12px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(18px);
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:9999;
+}
+
+.logo img{
+    width:150px !important;
+    height:auto;
+}
+
+/* скрываем большое меню */
+nav{
+    display:none !important;
+}
+
+/* если есть бургер */
+.mobile-menu{
+    display:flex !important;
+    font-size:32px;
+}
+
+/* ---------- Первый экран ---------- */
+
+.hero{
+
+    height:auto !important;
+    min-height:78vh;
+
+    padding:95px 22px 60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    width:100% !important;
+
+    max-width:100%;
+
+}
+
+.hero h1{
+
+    font-size:36px !important;
+
+    line-height:1.15;
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    max-width:340px;
+
+    margin:35px auto 0;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+/* ---------- Кнопки ---------- */
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:25px;
+
+}
+
+.hero-buttons a{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+}
+
+/* ---------- Секции ---------- */
+
+section{
+
+    padding:70px 22px;
+
+}
+
+.about{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+.services{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.contacts{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+iframe{
+
+    height:300px;
+
+}
+
+/* отключаем большие отступы */
+
+.hero::before,
+.hero::after{
+
+    display:none;
+
+}
+
+}
