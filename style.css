@@ -1276,79 +1276,87 @@ font-size:15px;
 
 }
 
-/* =========================================
-   TSON MOBILE LUXURY VERSION
-========================================= */
+/* ===========================
+   МОБИЛЬНАЯ ВЕРСИЯ
+=========================== */
 
-@media (max-width:768px){
+@media (max-width: 768px){
+
+/* Шапка */
 
 header{
+    padding:15px 20px;
     height:70px;
-    padding:12px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(255,255,255,.92);
-    backdrop-filter:blur(18px);
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:9999;
 }
 
 .logo img{
-    width:150px !important;
+    width:150px;
     height:auto;
 }
 
-/* скрываем большое меню */
+/* Если логотип текстом */
+
+.logo{
+    font-size:40px;
+}
+
+/* Меню */
+
 nav{
-    display:none !important;
+    display:none;
 }
 
-/* если есть бургер */
+/* Кнопка меню */
+
 .mobile-menu{
-    display:flex !important;
+    display:flex;
     font-size:32px;
+    cursor:pointer;
 }
 
-/* ---------- Первый экран ---------- */
+/* Первый экран */
 
 .hero{
 
-    height:auto !important;
-    min-height:78vh;
+    min-height:70vh;
 
-    padding:95px 22px 60px;
+    padding-top:90px;
 
-    display:flex;
+    padding-left:25px;
 
-    flex-direction:column;
+    padding-right:25px;
 
-    justify-content:center;
+    align-items:center;
 
     text-align:center;
 
 }
 
-.hero-content{
+/* Фото */
 
-    width:100% !important;
+.hero-image{
 
-    max-width:100%;
+    width:100%;
+
+    max-width:330px;
+
+    margin:auto;
 
 }
+
+/* Заголовок */
 
 .hero h1{
 
-    font-size:36px !important;
+    font-size:34px;
 
-    line-height:1.15;
+    line-height:1.2;
 
-    margin-bottom:18px;
+    margin-top:20px;
 
 }
+
+/* Подзаголовок */
 
 .hero p{
 
@@ -1356,37 +1364,17 @@ nav{
 
     line-height:1.7;
 
-}
-
-.hero-image{
-
-    width:100%;
-
-    max-width:340px;
-
-    margin:35px auto 0;
+    margin:20px auto;
 
 }
 
-.hero-image img{
-
-    width:100%;
-
-    border-radius:18px;
-
-}
-
-/* ---------- Кнопки ---------- */
+/* Кнопки */
 
 .hero-buttons{
 
-    display:flex;
-
     flex-direction:column;
 
-    gap:14px;
-
-    margin-top:25px;
+    gap:15px;
 
 }
 
@@ -1394,74 +1382,67 @@ nav{
 
     width:100%;
 
+    text-align:center;
+
     padding:16px;
 
-    border-radius:50px;
-
-    font-size:16px;
+    border-radius:40px;
 
 }
 
-/* ---------- Секции ---------- */
-
-section{
-
-    padding:70px 22px;
-
-}
+/* О дизайнере */
 
 .about{
 
-    display:flex;
+    grid-template-columns:1fr;
 
-    flex-direction:column;
-
-    gap:35px;
+    gap:40px;
 
 }
+
+.about img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+/* Карточки */
 
 .services{
 
-    display:grid;
-
     grid-template-columns:1fr;
 
-    gap:20px;
-
 }
+
+/* Галерея */
 
 .gallery{
 
-    display:grid;
-
     grid-template-columns:1fr;
 
-    gap:18px;
-
 }
+
+/* Контакты */
 
 .contacts{
 
-    display:flex;
-
-    flex-direction:column;
-
-    gap:30px;
+    grid-template-columns:1fr;
 
 }
 
-iframe{
+.contacts iframe{
 
     height:300px;
 
 }
 
-/* отключаем большие отступы */
+/* Отступы */
 
-.hero::before,
-.hero::after{
+section{
 
-    display:none;
+    padding:70px 25px;
 
 }
 
