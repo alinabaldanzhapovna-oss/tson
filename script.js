@@ -246,3 +246,19 @@ opacity:1;
 transform:translateY(0);
 
 }
+let lastScroll = 0;
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+
+    const currentScroll = window.pageYOffset;
+
+    if(currentScroll > lastScroll && currentScroll > 100){
+        nav.classList.add("hide");
+    }else{
+        nav.classList.remove("hide");
+    }
+
+    lastScroll = currentScroll;
+
+});
