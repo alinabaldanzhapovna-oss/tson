@@ -18,7 +18,6 @@
 
 html{
     scroll-behavior:smooth;
-    overflow-x: hidden;
 }
 
 body{
@@ -1135,8 +1134,7 @@ grid-template-columns:1fr;
 .advantages-grid{
 
 grid-template-columns:repeat(2,1fr);
-gap: 20px;
-  }   
+
 }
 
 .reviews-grid{
@@ -1214,23 +1212,6 @@ columns:2;
   .contact-value {
     font-size: 1.2rem;
   }
-    /* ===== НОВЫЕ ПРАВИЛА ДЛЯ "ФИЛОСОФИЯ БРЕНДА" ===== */
-    .advantages-grid {
-        grid-template-columns: 1fr !important;
-        gap: 15px !important;
-    }
-    .advantage {
-        padding: 20px !important;
-    }
-    .advantage h3 {
-        font-size: 36px !important;
-    }
-    .advantage h4 {
-        font-size: 22px !important;
-    }
-    .advantage p {
-        font-size: 15px !important;
-    }
 }
 
 @media (max-width: 480px) {
