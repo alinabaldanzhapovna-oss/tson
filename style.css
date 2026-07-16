@@ -1134,7 +1134,8 @@ grid-template-columns:1fr;
 .advantages-grid{
 
 grid-template-columns:repeat(2,1fr);
-
+gap: 20px;
+  }   
 }
 
 .reviews-grid{
