@@ -246,19 +246,12 @@ opacity:1;
 transform:translateY(0);
 
 }
-let lastScroll = 0;
-const nav = document.querySelector("nav");
 
-window.addEventListener("scroll", () => {
-
-    const currentScroll = window.pageYOffset;
-
-    if(currentScroll > lastScroll && currentScroll > 100){
-        nav.classList.add("hide");
-    }else{
-        nav.classList.remove("hide");
-    }
-
-    lastScroll = currentScroll;
-
-});
+// Прокрутка вверх по клику на логотип (дополнительно)
+const logoLink = document.querySelector('.logo a') || document.querySelector('.logo');
+if (logoLink) {
+  logoLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}

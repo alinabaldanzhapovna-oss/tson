@@ -152,24 +152,31 @@ header{
 ======================= */
 
 nav{
+
     position:fixed;
+
     top:0;
+
     left:0;
+
     width:100%;
-    padding:16px 8%;
+
+    padding:25px 8%;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
-    background:rgba(255,255,255,.9);
+
+    background:rgba(255,255,255,.45);
+
     backdrop-filter:blur(20px);
+
     z-index:999;
+
     border-bottom:1px solid rgba(255,255,255,.4);
 
-    transition:transform .35s ease;
-}
-
-nav.hide{
-    transform:translateY(-100%);
 }
 
 /* =======================
@@ -1156,77 +1163,73 @@ columns:2;
 
 }
 
-@media(max-width:768px){
-
-nav{
-    flex-direction:column;
-    gap:12px;
-    padding:12px 16px;
+/* ===== УЛУЧШЕННАЯ МОБИЛЬНАЯ ВЕРСИЯ ===== */
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 5% !important;  /* уменьшаем отступы */
+    flex-direction: row;         /* оставляем строку */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .logo img {
+    width: 120px;               /* меньше логотип */
+  }
+  nav ul {
+    gap: 18px;
+    font-size: 12px;
+  }
+  nav ul li a {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  .button, .button-outline {
+    padding: 10px 22px;
+    font-size: 12px;
+  }
+  .hero {
+    padding: 130px 5% 60px !important; /* вместо 220px */
+    gap: 40px;
+  }
+  .hero-text h2 {
+    font-size: 44px;
+  }
+  .hero-description {
+    font-size: 17px;
+  }
+  .hero-image img {
+    max-width: 90%;
+  }
+  /* отступы секций */
+  section {
+    padding: 60px 5%;
+  }
+  .section-header h2 {
+    font-size: 36px;
+  }
+  .contact-details {
+    padding: 1.5rem;
+  }
+  .contact-value {
+    font-size: 1.2rem;
+  }
 }
 
-nav ul{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:20px;
-
-}
-
-.hero{
-
-padding-top:150px;
-
-}
-
-.hero-text h2{
-
-font-size:52px;
-
-}
-
-h2{
-
-font-size:42px;
-
-}
-
-.gallery-grid{
-
-columns:1;
-
-}
-
-.advantages-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.button,
-.button-outline{
-
-display:block;
-
-text-align:center;
-
-width:100%;
-
-}
-
-.hero-buttons{
-
-flex-direction:column;
-
-}
-
-.contact-form{
-
-padding:30px;
-
-}
-
+@media (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 32px;
+  }
+  .hero {
+    padding: 110px 4% 40px !important;
+  }
+  .quote-text {
+    font-size: 28px;
+  }
+  .service-card {
+    padding: 30px 20px;
+  }
+  .number {
+    font-size: 40px;
+  }
 }
 
 @media(max-width:480px){
